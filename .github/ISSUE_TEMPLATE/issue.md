@@ -1,7 +1,7 @@
 ---
-name: Issue
+name: FHIR-A-THON feedback
 about: Use this form to capture issues, questions, suggestions about the profiles and their testing 
-title: Please type a title for the issue
+#title: Please type a title for the issue
 body:
   - type: dropdown
     id: project
@@ -14,7 +14,7 @@ body:
         - "Project B"
         - "Project C"
     validations:
-      required: true
+      required: false
 
   - type: input
     id: title
