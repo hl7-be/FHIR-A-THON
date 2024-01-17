@@ -1,6 +1,6 @@
 ---
 name: Issue
-about: Capturing issues across projects
+about: Use this form to capture issues, questions, suggestions about the profiles and their testing 
 title: Please type a title for the issue
 body:
   - type: input
@@ -10,7 +10,7 @@ body:
       description: "Provide a brief and descriptive title for the issue."
       placeholder: "Enter the issue title here"
     validations:
-      required: true
+      required: false
 
   - type: dropdown
     id: project
@@ -19,9 +19,9 @@ body:
       description: "Select the project this issue is related to."
       multiple: true
       options:
-        - A
-        - B
-        - C
+        - "Project A"
+        - "Project B"
+        - "Project C"
     validations:
       required: true
 
