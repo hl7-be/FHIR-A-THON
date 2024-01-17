@@ -3,15 +3,6 @@ name: Issue
 about: Use this form to capture issues, questions, suggestions about the profiles and their testing 
 title: Please type a title for the issue
 body:
-  - type: input
-    id: title
-    attributes:
-      label: Title
-      description: "Provide a brief and descriptive title for the issue."
-      placeholder: "Enter the issue title here"
-    validations:
-      required: false
-
   - type: dropdown
     id: project
     attributes:
@@ -24,6 +15,15 @@ body:
         - "Project C"
     validations:
       required: true
+
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: "Provide a brief and descriptive title for the issue."
+      placeholder: "Enter the issue title here"
+    validations:
+      required: false
 
   - type: markdown
     id: issue-text
