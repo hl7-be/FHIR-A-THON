@@ -1,3 +1,4 @@
+---
 name: FHIR-A-THON feedback
 about: Use this form to capture issues, questions, suggestions about the profiles and their testing 
 #title: Please type a title for the issue
@@ -9,9 +10,10 @@ body:
       description: "Select the project this issue is related to."
       multiple: true
       options:
-        - "Project A"
-        - "Project B"
-        - "Project C"
+        - "Lab"
+        - "Vaccination"
+        - "Allergy"
+        - "Population Screening"
     validations:
       required: false
   - type: input
