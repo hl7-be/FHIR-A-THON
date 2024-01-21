@@ -1,6 +1,6 @@
 name: FHIR-A-THON feedback
 description: Use this form to capture issues, questions, suggestions about the profiles and their testing 
-#title: Please type a title for the issue
+title: Please type a title for the issue
 body:
   - type: dropdown
     id: project
