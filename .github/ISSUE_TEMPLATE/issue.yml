@@ -17,17 +17,12 @@ body:
         - "Patient Will"
         - "Core profiles"
         - "Other/General testing"
-  - type: dropdown
+  - type: input
     id: system
     attributes:
       label: System(s)
       description: "Select the systems used"
-      multiple: true
-      options:
-        - "Vitalink"
-        - "Other/General testing"
-    validations:
-      required: false
+      placeholder: "Enter the system(s) here"
   - type: textarea
     id: description
     attributes:
