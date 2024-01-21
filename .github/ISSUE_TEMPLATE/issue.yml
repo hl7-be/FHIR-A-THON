@@ -9,10 +9,14 @@ body:
       description: "Select the project this issue is related to."
       multiple: true
       options:
-        - "Lab"
+        - "Lab results"
         - "Vaccination"
         - "Allergy"
+        - "Medication"
         - "Population Screening"
+        - "Patient Will"
+        - "Core profiles"
+        - "Other/General testing"
     validations:
       required: false
   - type: textarea
