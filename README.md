@@ -14,3 +14,4 @@ Or any other question about this testing event, and FHIR in Belgium.
 
 **To report a new issue, you can click here:**  [![Report Issue](https://img.shields.io/badge/New%20issue-a39b02?style=for-the-badge)](https://github.com/hl7-be/FHIR-A-THON/issues/new?assignees=&labels=&projects=&template=issue.yml)
 
+You must be logged in to github. If you don't have an account, please let us know by email.
