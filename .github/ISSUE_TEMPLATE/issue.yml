@@ -22,7 +22,7 @@ body:
     attributes:
       label: System(s)
       description: "Select the systems used"
-      placeholder: "Enter the system(s) here"
+      placeholder: "Enter the system(s) here - e.g. Vitalink, etc."
   - type: textarea
     id: description
     attributes:
