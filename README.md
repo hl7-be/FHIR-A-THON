@@ -6,14 +6,10 @@ Or any other question about this testing event, and FHIR in Belgium.
 
 **To see the submitted issues, please click the button below:**
 
-<a href="https://github.com/hl7-be/FHIR-A-THON/issues">
-  <img src="https://img.shields.io/badge/View%20Issues-Click%20Here-blue" alt="View Issues">
-</a>
+[![View Issues](https://example.com/view-issues-button.png)](https://github.com/hl7-be/FHIR-A-THON/issues)
 
 **To report a new issue, you can click the button below:**
 
-<a href="https://github.com/hl7-be/FHIR-A-THON/issues/new?assignees=&labels=&projects=&template=issue.yml">
-  <img src="https://img.shields.io/badge/Report%20Issue-Click%20Here-green" alt="Report Issue">
-</a>
+[![Report Issue](https://example.com/report-issue-button.png)](https://github.com/hl7-be/FHIR-A-THON/issues/new?assignees=&labels=&projects=&template=issue.yml)
 
 Thank you for your feedback!
