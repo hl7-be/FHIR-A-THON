@@ -15,11 +15,9 @@ body:
         - "Population Screening"
     validations:
       required: false
-  - type: input
-    id: title
+  - type: textarea
+    id: description
     attributes:
-      label: Title
+      label: Issue Description
       description: "Provide a brief and descriptive title for the issue."
       placeholder: "Enter the issue title here"
-    validations:
-      required: false
