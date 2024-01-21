@@ -1,4 +1,5 @@
---
+---
+
 name: 🐼 Demo Report
 description: File a bug report
 title: '[Bug]: '
