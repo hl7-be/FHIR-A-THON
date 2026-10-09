@@ -2,23 +2,19 @@ name: Traffic Data Exporter
 
 on:
   schedule:
-    # Runs everyday at 05:32 AM UTC to keep load balanced
-    - cron: '32 5 * * *'
-  workflow_dispatch: # Allows you to run this manually anytime
+    - cron: '36 9 * * *' # Draait elke dag automatisch
+  workflow_dispatch: # Zorgt dat je het handmatig kunt starten
 
 jobs:
-  run:
+  repo-sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: GitHub Traffic Exporter
-        uses: sangonzal/repository-traffic-exporter@v0.1.4
-        env:
-          CRON_JOB: true
+      - name: Fetch repository traffic data
+        uses: tech-sanders/repo-traffic-exporter@v1.0.0
         with:
-          # Uses the secret token you created
-          TOKEN: ${{ secrets.TRAFFIC_TOKEN }} 
-          # The repository to track (formatted as username/repo-name)
-          REPOSITORY: ${{ github.repository }} 
+          token: ${{ secrets.TRAFFIC_TOKEN }}
+          repository: ${{ github.repository }}
+          branch: 'traffic' # Dit maakt automatisch de 'traffic'-branch aan
