@@ -1,0 +1,24 @@
+name: Traffic Data Exporter
+
+on:
+  schedule:
+    # Runs everyday at 05:32 AM UTC to keep load balanced
+    - cron: '32 5 * * *'
+  workflow_dispatch: # Allows you to run this manually anytime
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: GitHub Traffic Exporter
+        uses: sangonzal/repository-traffic-exporter@v0.1.4
+        env:
+          CRON_JOB: true
+        with:
+          # Uses the secret token you created
+          TOKEN: ${{ secrets.TRAFFIC_TOKEN }} 
+          # The repository to track (formatted as username/repo-name)
+          REPOSITORY: ${{ github.repository }} 
